@@ -6,6 +6,7 @@ function App() {
   const [num2, setNum2] = useState(0);
   const [num3, setNum3] = useState(0);
   const [Add, setAdd] = useState("");
+  const [duration, setDuration] = useState("");
   let [resultContainer] = useState("");
 
   if (num1 === 0 || num2 === 0 || num3 === 0 || Add === "") {
@@ -22,8 +23,16 @@ function App() {
       alert("please enter a valid input");
       handleClick();
     } else {
-      let Add = (parseInt(num1) * parseInt(num2) * parseInt(num3)) / 100;
-      setAdd(parseInt(Add));
+      let Add = 0;
+      if (duration === "year" || "years") {
+        Add = (num1 * num2 * num3) / 100;
+      } else if (duration === "month" || "months") {
+        Add = (num1 * num2 * num3) / 1200;
+      } else {
+        Add = (num1 * num2 * num3) / 36500;
+      }
+
+      setAdd(Add.toFixed(2));
       console.log(setAdd);
     }
   };
@@ -41,26 +50,33 @@ function App() {
         <div className="container-left">
           <div className="input-wrapper">
             <form onSubmit={calcSum} className="wrapper">
-              <label htmlFor="principal">Principal (Rs/-):</label>
+              <label htmlFor="principal">Principal Amount (Rs/-):</label>
               <input
                 type="number"
                 id="principal"
                 value={num1 || ""}
                 onChange={(e) => setNum1(e.target.value)}
               />
-              <label htmlFor="rate">Rate (%):</label>
+              <label htmlFor="rate">Rate of Interest (%):</label>
               <input
                 type="number"
                 id="rate"
                 value={num2 || ""}
                 onChange={(e) => setNum2(e.target.value)}
               />
-              <label htmlFor="time">Time:</label>
+              <label htmlFor="time">Time period:</label>
               <input
                 type="number"
                 id="time"
                 value={num3 || ""}
                 onChange={(e) => setNum3(e.target.value)}
+              />
+              <label htmlFor="time">Duration(in years/months/days):</label>
+              <input
+                type="text"
+                id="time"
+                value={duration}
+                onChange={(e) => setDuration(e.target.value)}
               />
               <div className="button">
                 <button type="submit">Calculate</button>
@@ -70,9 +86,9 @@ function App() {
           </div>
         </div>
         <div className={resultContainer}>
-          <p>Principal Amount : {parseInt(num1)}</p>
-          <p>Interest Amount : {parseInt(Add)}</p>
-          <p>Total Amount : {parseInt(num1) + parseInt(Add)}</p>
+          <p>Principal Amount : {num1}</p>
+          <p>Interest Amount : {Add}</p>
+          <p>Total Amount : {num1 + Add}</p>
         </div>
       </div>
     </div>

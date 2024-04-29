@@ -10,7 +10,7 @@ body {
 }
 
 .bg-container {
-  background-color: #e0a4d0;
+  background-color: #abc5be;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -148,7 +148,7 @@ select {
 
 button {
   display: block;
-  background-color: #01e26e;
+  background-color: #123a3a;
   border: none;
   color: #ffffff;
   margin: 20px auto 0 auto;
