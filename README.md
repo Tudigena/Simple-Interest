@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+<!-- Improved compatibility of back to top link: See: (https://simple-interest-g5to-git-main-tudigenas-projects.vercel.app/) -->
+<a name="readme-top"></a>
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://simple-interest-g5to-git-main-tudigenas-projects.vercel.app/">
+    <img src="https://uploads-ssl.webflow.com/640d8e45aa58d31a5157afd2/64ab380f69e238fde374f9ae_Slide%2016_9%20-%20117.png" alt="Logo" width="400" height="200">
+  </a>
+  <h3 style="text-align:center;font-weight:bold">Simple Interest Calculator</h3>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <!-- ABOUT THE PROJECT -->
+## About The Project
+It calculates interest on the principal. It allows us to calculate interest using the simple interest formula. Because the algorithm underlying it makes no mistakes, it offers you with accurate interest. This tool can help us understand the differences between various interest types. When all terms are entered into the formula box, the simple interest calculator in India displays interest.
 
-## Available Scripts
+<p style="text-align:center;font-weight:bold">  </p>
+<p align="center">
+  <img width="887" alt="Screenshot 2023-03-22 at 11 02 03" src="https://s4.aconvert.com/convert/p3r68-cdx67/au7r4-s8oar.png">
+</p>
+<div style="font-size: 20px; font-family:"Roboto"">
+<p>Users are required to enter four input values in this form.
+</p>
+<p>1. The principal sum received in Rupees.</p>
+<p>2. Amount borrowed at the interest rate expressed as a percentage.</p>
+<p>3. Time from the beginning of taking to the due date.</p>
+<p>4. If the user chooses to take the amount for an interest of years, months, or days, the duration should be of a text form where they must enter the years/months/days.</p>
+</div>
 
-In the project directory, you can run:
 
-### `npm start`
+<!-- GETTING STARTED -->
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
+1. npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installation
 
-### `npm test`
+1. Clone the repo
+   ```sh
+   git clone https://github.com/Tudigena/Simple-Interest.git
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- USAGE EXAMPLES -->
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Run the application locally 
+   ```sh
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- LICENSE -->
+## License
 
-### `npm run eject`
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- CONTACT -->
+## Contact
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+RaviTeja Tudigena- ravitejatudigana@gmail.com
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Project Link:https://github.com/Tudigena/Simple-Interest.git
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: https://simple-interest-g5to.vercel.app/
